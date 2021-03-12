@@ -1,0 +1,147 @@
+.contenedor-transicion{
+
+}
+
+.cuerpo{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+
+.uno{
+    width: 200px;
+    height: 200px;
+    background: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    /* transition-property: background, color; */
+    /* transition-duration: 1s; */
+    /* transition-delay:  1s; */
+    transition: color 0.5s ease 1s;
+}
+
+.uno:hover{
+    background: green;
+    color: black;
+    /* transform: translateX(25%); */
+    /* transform: scale(2); */
+    transform: rotate(45deg);
+
+}
+
+/* ________________________________________________________ */
+
+.cuerpo2{
+    background: salmon;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    background: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 3rem; */
+    color: white;
+    transition-property: transform;
+    transition-duration: 2s;
+ 
+}
+
+.cuerpo2:hover .box{ 
+    transform: translateX(calc(100vw - 100%));
+}
+
+.ease{
+    transition-timing-function: ease;
+}
+
+.ease-in{
+    transition-timing-function: ease-in;
+}
+.ease-out{
+    transition-timing-function: ease-out;
+}
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+}
+.linear{
+    transition-timing-function: linear;
+}
+/* ___________________________________________________ */
+
+
+.body{
+    background: #2a363b;
+    font-family: sans-serif;
+    height: 500px;
+}
+
+.title{
+    text-align: center;
+    color: #aaa;
+}
+
+.main-menu{
+    list-style: none;
+    padding-left: 0;
+    width: 95%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    background: #ff847c;
+    font-size: 1.2rem;
+    color: #2a363b;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 30px;
+}
+
+.main-menu__item{
+    position: relative;
+    cursor: pointer;
+    padding: 1.4rem 0;
+    overflow: hidden;
+}
+
+.main-menu__item::before,
+.main-menu__item::after{
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #2a363b;
+    transition: transform 0.2s;
+}
+
+.main-menu__item::before{
+    bottom: 15px;
+    transform: translateX(-100%);
+}
+
+.main-menu__item::after{
+    top: 15px;
+    transform: translateX(100%);
+}
+
+.main-menu__item:hover:before,
+.main-menu__item:hover:after{
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
