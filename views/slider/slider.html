@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="slider.css">
+    <title>Slider</title>
+</head>
+<body>
+
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/3 Metros sobre el cielo.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/After.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Alicia en el pais de la Maravillas.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Amor En los Tiempos de colera.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Buenos dias Princesa.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Callame con un Beso.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Canciones Para Paula.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Cumbres Borroscosas.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Eclipse.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/El alquimimsta.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/El club de los Incomprendidos.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/El conde de Montecristo.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/El retrato de Dorian Gray.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Harry Poter.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/La Odisea.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Las aventuras de robinson crusoe.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Las Aventuras de Sherlock Holmes.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Narnia.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/No sonrias que me enamora.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Papa Goriot.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Puedo soñar Contigo.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Romeo y JUlieta.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Sabes que te quiero.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Tengo un secreto El diario de Meri.jpg" alt="nose"></div>
+            <div class="swiper-slide"><img src="img/Yo antes de ti.jpg" alt="nose"></div>
+
+        
+        </div>
+
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        },
+        loop:true,
+        autoplay:{
+            delay:1000,
+            disableOnInteraction:false
+        }
+    });
+ </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
