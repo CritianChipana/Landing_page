@@ -1,4 +1,10 @@
 .contenedor{
-    width: 400px;
+    border: 1px solid black;
+    width: 600px;
+    height: 300px;
     overflow: hidden;
+}
+
+.nose{
+    border: 1px solid black;
 }
